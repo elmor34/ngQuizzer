@@ -3,6 +3,7 @@ module.exports = (grunt) ->
 	grunt.loadNpmTasks 'grunt-contrib-coffee'
 	grunt.loadNpmTasks 'grunt-contrib-stylus'
 	grunt.loadNpmTasks 'grunt-contrib-jade'
+	grunt.loadNpmTasks 'grunt-contrib-connect'
 	grunt.loadNpmTasks 'grunt-karma'
 
 	grunt.initConfig
@@ -21,6 +22,17 @@ module.exports = (grunt) ->
 			stylus:
 				files: 'src/stylus/**/*.stylus'
 				tasks: ['stylus:compile']
+			options:
+				livereload: true
+
+		connect:
+			server:
+				options:
+					port: 9000
+					base: 'app/'
+					keepalive: true
+					livereload: true
+					open: true
 
 		coffee:
 			compile:
