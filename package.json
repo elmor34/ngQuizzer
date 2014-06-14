@@ -1,0 +1,29 @@
+{
+  "name": "ngQuizzer",
+  "version": "0.1.0",
+  "description": "Testing app",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://wbyoko@github.com/wbyoko/ngQuizzer.git"
+  },
+  "author": "William Bagayoko",
+  "bugs": {
+    "url": "https://github.com/wbyoko/ngQuizzer/issues"
+  },
+  "devDependencies": {
+    "grunt": "~0.4.5",
+    "grunt-contrib-coffee": "~0.10.1",
+    "grunt-contrib-stylus": "~0.17.0",
+    "grunt-contrib-jade": "~0.12.0",
+    "grunt-contrib-watch": "~0.6.1",
+    "karma": "~0.12.16",
+    "grunt-karma": "~0.8.3",
+    "karma-jasmine": "~0.1.5",
+    "karma-chrome-launcher": "~0.1.4",
+    "karma-coffee-preprocessor": "~0.2.1"
+  }
+}
