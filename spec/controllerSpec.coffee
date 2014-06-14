@@ -1,11 +1,11 @@
-
 describe 'controllers', () ->
 
-  beforeEach module 'ngq.controllers'
-  
-  it 'should exist', inject ($controller) ->
- 
-    myCtrl1 = $controller 'HomeCtrl', 
-      $scope: {}
+	beforeEach module 'ngq.controllers'
 
-    expect(myCtrl1).toBeDefined()
+	describe 'HomeCtrl', () ->
+		it 'should exist', inject ($controller) ->
+
+			myCtrl1 = $controller 'HomeCtrl', 
+				$scope: {}
+
+			expect(myCtrl1).toBeDefined()

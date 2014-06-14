@@ -1,3 +1,3 @@
 var ngq;
 
-ngq = angular.module('ngQuizzer', ['ngRoute', 'ngq.controllers']);
+ngq = angular.module('ngQuizzer', ['ngRoute', 'ngq.services', 'ngq.controllers']);
