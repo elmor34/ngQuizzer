@@ -1,0 +1,14 @@
+
+<h4>Results</h4>
+<table class="table">
+  <tr>
+    <th>#</th>
+    <th>Question</th>
+    <th>Your Answer</th>
+  </tr>
+  <tr ng-repeat="question in r.questions" ng-class="r.isQuestionCorrect($index) &amp;&amp; 'success' || 'warning'">
+    <td ng-bind="$index + 1"></td>
+    <td ng-bind="question.text"></td>
+    <td ng-bind="r.answerText($index)"></td>
+  </tr>
+</table><a href="#/home" role="button" class="btn btn-link">Back to Home</a>
