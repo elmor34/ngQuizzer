@@ -11,6 +11,9 @@ module.exports = (grunt) ->
 		karma:
 			unit:
 				configFile: 'karma.conf.coffee'
+			live:
+				configFile: 'karma.conf.coffee'
+				singleRun: false
 
 		watch:
 			coffee:
