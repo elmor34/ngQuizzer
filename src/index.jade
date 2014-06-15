@@ -8,8 +8,8 @@ html(lang='en')
 
         title ngQuizzer
 
-        link(href='lib/bootstrap/css/bootstrap.css')
-        link(href='css/app.css')
+        link(rel='stylesheet', href='lib/bootstrap/css/bootstrap.css')
+        link(rel='stylesheet', href='css/app.css')
 
         script(src='lib/angular/angular.js')
         script(src='lib/angular/angular-route.js')
@@ -18,6 +18,6 @@ html(lang='en')
         script(src='js/services.js')
         script(src='js/controllers.js')
             
-    body(ng-app='ngQuizzer')
+    body(ng-app='ngQuizzer', class='container')
         h1 ngQuizzer
-        div(ng-view='', class='container')
+        div(ng-view='')
