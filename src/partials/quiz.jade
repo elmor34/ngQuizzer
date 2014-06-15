@@ -1,0 +1,11 @@
+h4 Question {{q.index}}
+div {{q.question.text}}
+p
+	button(
+		type='button'
+		ng-click='q.selectTrue()'
+		class='btn btn-lg btn-default') True
+	button(
+		type='button'
+		ng-click='q.selectFalse()'
+		class='btn btn-lg btn-default') False

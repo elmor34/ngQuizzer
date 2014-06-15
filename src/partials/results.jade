@@ -1,0 +1,16 @@
+h4 Results
+table(class='table')
+	tr
+		th #
+		th Question
+		th Your Answer
+	tr(
+		ng-repeat='question in r.questions'
+		ng-class='r.isQuestionCorrect($index) && \'success\' || \'warning\'')
+		td(ng-bind='$index + 1')
+		td(ng-bind="question.text")
+		td(ng-bind="r.answerText($index)")
+a(
+	href='#/home'
+	class='btn btn-link'
+	role='button') Back to Home

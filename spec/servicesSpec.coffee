@@ -9,3 +9,11 @@ describe 'services', () ->
 
 		it 'should init with questions', inject (QuestionSrvc) ->
 			expect(QuestionSrvc.questions.length).toBeGreaterThan(0)
+
+	describe 'AnswerSrvc', () ->
+
+		it 'should exist', inject (AnswerSrvc) ->
+			expect(AnswerSrvc).toBeDefined()
+
+		it 'answers should exist', inject (AnswerSrvc) ->
+			expect(AnswerSrvc.answers).toBeDefined()
